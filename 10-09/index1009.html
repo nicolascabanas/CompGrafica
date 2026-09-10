@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong WebGL 2D</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #111;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            color: #fff;
+        }
+        #placar {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            letter-spacing: 10px;
+        }
+        #pontos-esq {
+            color: #00ff00;
+        }
+        #pontos-dir {
+            color: #4444ff;
+        }
+        canvas {
+            border: 2px solid #fff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="placar">
+        <span id="pontos-esq">0</span> : <span id="pontos-dir">0</span>
+    </div>
+    
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <script src="m1009.js"></script>
+    <script src="main1009.js"></script>
+</body>
+</html>
